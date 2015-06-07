@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animales</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones"></script>
+
+<script src="phonegap.js"></script>
+<style>
+#principal {
+	position:absolute;
+	left:opx;
+	top:0;
+	width:100%;
+	background-color:#6FF;
+}
+#pantalla {
+	float:left;
+	width:100%;
+	height:25%;
+	background:#0CF;
+	text-align:center;
+	font-size:4em;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#teclado {
+	float:left;
+	width:100%;
+	height:75%;
+}
+.nota {
+	position:relative;
+	float:left;
+	height:100%;
+	width:50%;
+}
+.textonota {
+	position:relative;
+	top:80%;
+	margin:25px 25px;
+	text-align:center;
+	font-size:2em;
+	color:#00F; 
+}
+</head>
+</style> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" style="background-image: url(images/arjeta-de-fondo-.jpg)">
+		<h1>ANIMALES</h1>
+	</div>
+	<div data-role="content" style="background-image: url(images/playa.gif)">
+		<ul data-role="listview">
+         <div align="center" data-role="controlgroup" data-type="vertical">
+            <div style="width:50%">
+          <p><a href="#page2" data-role="button" id="botn1">
+          Domesticos
+          </a>
+            <a href="#page3" data-role="button" id="botn2">
+            Salvajes
+            </a> 
+          </p>
+          <p>&nbsp;</p>
+          <p><img src="images/animales.jpg" width="436" height="278"></p>
+          <p>&nbsp;</p>
+		</ul>		
+	</div>
+	<div data-role="footer" style="background-image: url(images/arjeta-de-fondo-.jpg)">
+		<h4><font color= color="" size="+2" face="Arial, Helvetica, sans-serif">"Las mentes más profundas de todos los tiempos han sentido compasión por los animales."</font></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2"  data-add-back-btn="true">
+	<div data-role="header" style="background-color: rgba(156,3,197,1.00)">
+		<h1><font color="#F3F3F3" size="+2" face="Arial, Helvetica, sans-serif">DOMESTICOS</font></h1>
+	</div>
+	<div data-role="content" style="background-image:url(images/9e73f96a7bc6bc8ea54b6c5eaccc0cbd.jpg)">	
+	<div id="teclado" >
+    
+    <div id="canario" class="nota">
+    <div class="textnota">
+    <p>&nbsp;</p>
+    <p><img src="animales domesticos/canario.gif" width="261" height="211"></p>         
+    </div>
+  </div>
+
+    
+    <div id="Conejos" class="nota">
+    <div class="textnota">
+    <p>&nbsp;</p>
+    <p><img src="animales domesticos/conejos.jpg" width="251" height="212"></p>
+     </div>
+  </div>
+            
+            
+    <div id="gatos" class="nota">
+         <div class="textnota">
+         <p>&nbsp;</p>
+<p><img src="animales domesticos/gatos.jpg" width="261" height="232"></p>
+                </div>
+      </div>
+            
+            <div id="jamsters" class="nota">
+            <div class="textnota">
+            <p>&nbsp;</p>
+           <p><img src="animales domesticos/jamsters.jpg" width="263" height="235"></p>
+                </div>
+            </div>
+            
+              <div id="Patos" class="nota">
+            <div class="textnota">
+            <p>&nbsp;</p>
+            <p><img src="animales domesticos/patos.jpg" width="264" height="275"></p>
+                </div>
+            </div>
+            
+                <div id="perros" class="nota">
+            	<div class="textnota">
+                <p>&nbsp;</p>
+                <p><img src="animales domesticos/perros-lindos.jpg" width="264" height="277"></p>
+                </div>
+            </div>
+</div>		
+	</div>
+	<div data-role="footer" style="background-color: rgba(156,3,197,1.00)">
+		<h4><font color="#F0F0F0" size="+2" face="Arial, Helvetica, sans-serif">"Cuando un hombre se apiade de todas las criaturas vivientes, sólo entonces será noble."</font></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header" style="background-color: "rgba(25,17,213,1.00)">
+		<h1><font color="#F0F0F0" size="+2" face="Arial, Helvetica, sans-serif">SALVAJES</font></h1>
+	</div>
+	<div data-role="content" style="background-image:url(images/superthumb.jpg)">	
+    <div id="teclado">
+    
+    <div id="lobo" class="nota">
+    <div class="textnota">
+    <p>&nbsp;</p>
+    <p><img src="animales salvajes/lobo.jpg"  width="91%" height="247"></p>
+    </div>
+    </div>
+    
+    <div id="mono" class="nota">
+    <div class="textnota">
+    <p>&nbsp;</p>
+    <p><img src="animales salvajes/mono.jpg" width="89%" height="248"></p>
+                </div>
+            </div>
+            
+            
+    <div id="rinoseronte" class="nota">
+         <div class="textnota">
+         <p>&nbsp;</p>
+<p><img src="animales salvajes/rinoseronte.jpg" width="88%" height="238"></p>
+                </div>
+            </div>
+            
+            <div id="tigre" class="nota">
+            <div class="textnota">
+            <p>&nbsp;</p>
+           <p><img src="animales salvajes/tigre-de-siberia.jpg" width="89%" height="241"></p>
+                </div>
+            </div>
+            
+              <div id="ballena" class="nota">
+            <div class="textnota">
+            <p>&nbsp;</p>
+            <p><img src="animales salvajes/ballena.jpg" width="92%" height="225"></p>
+                </div>
+            </div>
+            
+                <div id="tiburon" class="nota">
+            	<div class="textnota">
+                <p>&nbsp;</p>
+                <p><img src="animales salvajes/tiburon.jpg" width="92%" height="225"></p>
+                </div>
+            </div>
+</div>		
+	</div>
+	<div data-role="footer" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h4><font color="F0F0F0" size="+2" face="Arial, Helvetica, sans-serif">"Verdaderamente el hombre es el rey de los animales pues su brutalidad supera la de estos."</font></h4>
+	</div>
+</div>
+		
+	</div>
+	<div data-role="footer" style="background-color:"rgba(25,17,213,1.00)">
+		<h4><font color="#F0F0F0" size="+2" face="Arial, Helvetica, sans-serif">LIZBETH RAMIREZ DE LA CRUZ</font></h4>
+	</div>
+</div>
+</body>
+</html>
